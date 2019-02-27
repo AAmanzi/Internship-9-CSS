@@ -226,3 +226,16 @@ main{
 .style__card__pricetag{
     color:#878787;
 }
+
+@media screen and (max-width: 1024px){
+    .dropdown__button{
+        width: 90px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+    .card__image__overlap{
+        justify-content: flex-start;
+    }
+}
