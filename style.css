@@ -112,7 +112,9 @@ nav{
 
 .dropdown{
     position: relative;
+    height: 40px;
     display: inline-block;
+    
 }
 
 .dropdown__button:focus{
@@ -232,10 +234,21 @@ main{
         width: 90px;
     }
 
-    h2{
-        font-size: 14px;
+    .style__card{
+        width: calc(33.33% - 10px);
     }
-    .card__image__overlap{
-        justify-content: flex-start;
+
+    h2{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .style__card{
+        width: calc(50% - 10px);
+    }
+
+    .dropdown__button{
+        width: 143px;
     }
 }
