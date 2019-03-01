@@ -11,6 +11,25 @@ h3{
     font-size: 12px;
 }
 
+.dropdown__up{
+    font-size: 17px;
+    margin-right: 6px;
+    margin-bottom: -6px;
+}
+
+.dropdown__down{
+    margin-right: 6px;
+    display: none;
+}
+
+.dropdown:hover .dropdown__down{
+    display: inline;
+}
+
+.dropdown:hover .dropdown__up{
+    display: none;
+}
+
 .dropdown__content{
     display: none;
     position: absolute;
@@ -33,6 +52,9 @@ nav{
 }
 
 .dropdown__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-style: solid;
     border-width: 1px;
     border-color: #afafaf;
